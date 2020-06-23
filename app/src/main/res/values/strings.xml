@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="titulo">Formulario</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="Contrasena">Contraseña</string>
+    <string name="repita_contrasena">Repita su contraseña</string>
+    <string name="Fecha">Fecha de Nacimiento</string>
+    <string name="Fecha_nacimiento">MM/dd/yyyy</string>
+    <string name="ciudad_nacimiento">Ciudad de Nacimiento</string>
+    <string name="genero">Género</string>
+    <string name="masculino">Masculino</string>
+    <string name="femenino">Femenino</string>
+    <string name="pasatiempos">Hobbies</string>
+    <string name="cine">Cine</string>
+    <string name="ps4">PS4</string>
+    <string name="ver_tv">Ver TV</string>
+    <string name="guardar">Guardar</string>
+    <string name="facebook">Facebook</string>
+    <string name="error_contrasenas">Las contraseñas no coinciden</string>
+    <string-array name="lista_de_ciudades">
+        <item>Medellín</item>
+        <item>Bogotá</item>
+        <item>Bucaramanga</item>
+        <item>San Gil</item>
+        <item>Villanueva
+        </item>
+    </string-array>
+    <string-array name="sp">
+        <item>#FFFFFF</item>
+        <item>#4698F5</item>
+        <item>#15A764</item>
+    </string-array>
+</resources>

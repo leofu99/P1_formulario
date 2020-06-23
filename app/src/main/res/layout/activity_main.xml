@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        tools:context=".RegistroActivity"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="@string/titulo"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:inputType="textPersonName"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/correo_electronico"
+            android:inputType="textEmailAddress"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="null"
+            android:ems="10"
+            android:hint="@string/telefono"
+            android:inputType="number"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/Contrasena"
+            android:inputType="textPassword"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/et_rep_contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/repita_contrasena"
+            android:inputType="textPassword"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/tv_genero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/genero"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:checked="true"
+                android:shadowColor="#FFFFFF"
+                android:text="@string/masculino"
+                android:textColorLink="@android:color/background_dark" />
+
+            <RadioButton
+                android:id="@+id/rb_femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="@string/femenino" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_pasatiempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pasatiempos"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/ch_Cine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="@string/cine" />
+
+            <CheckBox
+                android:id="@+id/ch_ps4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="@string/ps4" />
+
+            <CheckBox
+                android:id="@+id/ch_series"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="@string/ver_tv" />
+
+            <CheckBox
+                android:id="@+id/ch_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@android:color/holo_orange_dark"
+                android:text="@string/facebook" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_fecha_de_nacimiento_lb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/Fecha"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fecha_nacimiento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:hint="@string/Fecha_nacimiento"
+                android:textAlignment="gravity"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/ib_calendario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@android:color/holo_orange_dark"
+                app:srcCompat="@android:drawable/ic_menu_today" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_ciudad_nacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ciudad_nacimiento"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_ciudad_nacimiento"
+            android:layout_width="179dp"
+            android:layout_height="36dp"
+            android:entries="@array/lista_de_ciudades"
+            android:spinnerMode="dropdown" />
+
+        <Button
+            android:id="@+id/bt_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/colorFocusedHighlight"
+            android:text="@string/guardar"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:layout_marginTop="8dp"
+            android:textColor="?android:attr/colorActivatedHighlight"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</ScrollView>
